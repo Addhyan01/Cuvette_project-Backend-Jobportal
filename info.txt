@@ -1,0 +1,17 @@
+install package: 
+    1. Express - npm i express;
+    2. mongoose - npm i mongoose
+    3. bcrypt = npm i bcrypt;
+    4. Jwt Token = jsonwebtoken;
+    5.           = body-parser;
+    6. Nodemon =  npm i Nodemon;
+    7. .env Package = npm i dotenv; (we keep some secret data ):-  we just createa file called .env and it's call enviorment        
+
+    in this file we trach what request is going and it trach why it is crash it track and store therequest :
+    using :  fs.appendFileSync("log.txt", req.method + " " + req.url + " " + new Date().toISOString()  +"\n");
+
+        {
+
+    and supose we want to track ip : var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress     
+                                    fs.appendFileSync("log.txt", `${req.method}  ${req.url} ${ip} ${new Date().toISOString()}\n`);     
+        }
