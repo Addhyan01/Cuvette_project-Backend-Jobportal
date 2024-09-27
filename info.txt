@@ -15,3 +15,11 @@ install package:
     and supose we want to track ip : var ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress     
                                     fs.appendFileSync("log.txt", `${req.method}  ${req.url} ${ip} ${new Date().toISOString()}\n`);     
         }
+
+        what is mongoose ?
+        mongoose is nothing but a package we can use connect mongoDb to our server;
+        what is ORM ?
+
+        What is diffrent btn orn and database?
+        orm create layer between database and programming language 
+        
